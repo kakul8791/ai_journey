@@ -1,22 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'screens/home_screen.dart';
 
-void main() => runApp(const GhumFirApp());
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.light,
+    ),
+  );
+  runApp(const AiJourneyApp());
+}
 
-class GhumFirApp extends StatelessWidget {
-  const GhumFirApp({super.key});
+class AiJourneyApp extends StatelessWidget {
+  const AiJourneyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'GhumFir',
+      title: 'AI Journey Planner',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFFC0392B),
-        ),
-        scaffoldBackgroundColor: const Color(0xFFFDF6EE),
         fontFamily: 'Nunito',
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF1A6B4A),
+          brightness: Brightness.dark,
+        ),
+        scaffoldBackgroundColor: const Color(0xFF0D1F17),
+        useMaterial3: true,
       ),
       home: const HomeScreen(),
     );
