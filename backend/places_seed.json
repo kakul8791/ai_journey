@@ -1,0 +1,197 @@
+[
+    {
+      "id": "manali",
+      "name": "Manali",
+      "state": "Himachal Pradesh",
+      "distance_km": 540,
+      "description": "Snow-capped peaks, adventure sports, and cozy cafes nestled in the Beas river valley.",
+      "best_for": ["couple", "friends"],
+      "tags": ["hills", "adventure", "snow", "trekking", "scenic"],
+      "ideal_days": 5,
+      "avg_daily_cost_per_person": 1800,
+      "avg_meal_cost_per_person": 250,
+      "avg_temp_c": 12,
+      "has_hills": true,
+      "image_hint": "snow mountains river valley",
+      "food_tip": "Try sidu (local bread) and siddu at Old Manali cafes",
+      "dinner_tip": "Johnson's Cafe for trout and wood-fired pizza",
+      "origin_hint": "Delhi",
+      "local_tips": [
+        "Carry warm layers even in summer – nights drop below 10°C",
+        "Book Rohtang Pass permit online 2 days in advance",
+        "Old Manali is far more charming than the mall road area"
+      ],
+      "nearest_hospital": "Manali Civil Hospital: +91-1902-252379",
+      "activities": [
+        {"name": "Solang Valley Snow Point", "category": "adventure", "cost_approx": 600, "best_time": ["morning"], "tip": "Go early to avoid crowds and slush"},
+        {"name": "Rohtang Pass visit", "category": "sightseeing", "cost_approx": 800, "best_time": ["morning"], "tip": "Permits required; book at least 2 days prior"},
+        {"name": "Beas River rafting", "category": "adventure", "cost_approx": 700, "best_time": ["afternoon"], "tip": "Grade II-III rapids, safe for beginners"},
+        {"name": "Hadimba Devi Temple", "category": "sightseeing", "cost_approx": 0, "best_time": ["morning"], "tip": "Peaceful before 9 AM"},
+        {"name": "Old Manali cafe hopping", "category": "food", "cost_approx": 400, "best_time": ["afternoon", "evening"], "tip": "Dylan's Toasted & Roasted is a must"},
+        {"name": "Jogini Waterfall trek", "category": "adventure", "cost_approx": 0, "best_time": ["morning"], "tip": "Easy 2-hour return trek, carry water"},
+        {"name": "Vashisht hot springs", "category": "relaxation", "cost_approx": 50, "best_time": ["evening"], "tip": "Soothing after a day of activities"},
+        {"name": "Naggar Castle visit", "category": "history", "cost_approx": 150, "best_time": ["afternoon"], "tip": "Stunning Himalayan views from the top"}
+      ]
+    },
+    {
+      "id": "goa",
+      "name": "Goa",
+      "state": "Goa",
+      "distance_km": 1900,
+      "description": "Sun, sand, seafood, and the timeless Portuguese charm of India's favourite beach destination.",
+      "best_for": ["friends", "couple", "all"],
+      "tags": ["beach", "nightlife", "food", "seafood", "relaxation"],
+      "ideal_days": 4,
+      "avg_daily_cost_per_person": 2200,
+      "avg_meal_cost_per_person": 350,
+      "avg_temp_c": 29,
+      "has_beach": true,
+      "image_hint": "goa beach sunset sea",
+      "food_tip": "Eat at beach shacks for fresh catch – avoid restaurant menus",
+      "dinner_tip": "Fisherman's Wharf or Gunpowder for authentic Goan cuisine",
+      "origin_hint": "Mumbai",
+      "local_tips": [
+        "Renting a scooter (₹300/day) is the best way to get around",
+        "North Goa for nightlife; South Goa for peace and cleaner beaches",
+        "Avoid weekends if visiting water sports zones – massively crowded"
+      ],
+      "activities": [
+        {"name": "Baga Beach water sports", "category": "adventure", "cost_approx": 1200, "best_time": ["morning"], "tip": "Parasailing + jet ski combo is worth it"},
+        {"name": "Dudhsagar Waterfall day trip", "category": "adventure", "cost_approx": 800, "best_time": ["morning"], "tip": "Book jeep safari from Collem village"},
+        {"name": "Fort Aguada sunset", "category": "sightseeing", "cost_approx": 50, "best_time": ["evening"], "tip": "Arrive 30 mins before sunset for the golden light"},
+        {"name": "Anjuna Flea Market", "category": "shopping", "cost_approx": 500, "best_time": ["afternoon"], "tip": "Every Wednesday; bargain hard"},
+        {"name": "Cruise on Mandovi River", "category": "romantic", "cost_approx": 400, "best_time": ["evening"], "tip": "Sunset cruise has live Goan folk music"},
+        {"name": "Old Goa churches walk", "category": "history", "cost_approx": 0, "best_time": ["morning"], "tip": "Basilica of Bom Jesus is a UNESCO site"},
+        {"name": "Spice plantation tour", "category": "offbeat", "cost_approx": 600, "best_time": ["morning"], "tip": "Includes lunch and elephant interaction"},
+        {"name": "Nightlife at Tito's Lane", "category": "nightlife", "cost_approx": 1500, "best_time": ["evening"], "tip": "LPK Waterfront is more scenic for couples"}
+      ]
+    },
+    {
+      "id": "coorg",
+      "name": "Coorg (Kodagu)",
+      "state": "Karnataka",
+      "distance_km": 260,
+      "description": "The Scotland of India – misty coffee estates, waterfalls, and the warmth of Kodava hospitality.",
+      "best_for": ["couple", "family", "friends"],
+      "tags": ["hills", "coffee", "nature", "trekking", "scenic", "relaxation"],
+      "ideal_days": 3,
+      "avg_daily_cost_per_person": 1500,
+      "avg_meal_cost_per_person": 200,
+      "avg_temp_c": 20,
+      "has_hills": true,
+      "image_hint": "coorg coffee plantation mist",
+      "food_tip": "Try Pandi Curry (pork) and Akki Roti – Coorg's iconic dishes",
+      "dinner_tip": "Raintree restaurant for authentic Kodava meals",
+      "origin_hint": "Bangalore",
+      "local_tips": [
+        "Roads are narrow and winding – avoid driving at night",
+        "Best season: October to March; monsoon is beautiful but roads get slippery",
+        "Buy fresh coffee powder directly from estates – much cheaper"
+      ],
+      "activities": [
+        {"name": "Abbey Falls", "category": "sightseeing", "cost_approx": 80, "best_time": ["morning"], "tip": "Best during post-monsoon for full flow"},
+        {"name": "Dubare Elephant Camp", "category": "kids_friendly", "cost_approx": 500, "best_time": ["morning"], "tip": "Book elephant bathing experience at 7 AM"},
+        {"name": "Nagarhole National Park safari", "category": "wildlife", "cost_approx": 1200, "best_time": ["morning"], "tip": "Elephant and tiger sightings are common"},
+        {"name": "Talakaveri – Kaveri origin trek", "category": "adventure", "cost_approx": 0, "best_time": ["morning"], "tip": "Sacred site; short but steep climb"},
+        {"name": "Raja's Seat sunset", "category": "romantic", "cost_approx": 20, "best_time": ["evening"], "tip": "Views over misty valleys – magical at golden hour"},
+        {"name": "Coffee estate walk", "category": "offbeat", "cost_approx": 300, "best_time": ["morning"], "tip": "Most homestays include a guided estate tour"},
+        {"name": "Iruppu Waterfalls", "category": "adventure", "cost_approx": 50, "best_time": ["afternoon"], "tip": "Combine with Brahmagiri Wildlife Sanctuary walk"},
+        {"name": "Madikeri Fort", "category": "history", "cost_approx": 50, "best_time": ["afternoon"], "tip": "Fort museum tells the Kodagu royal history"}
+      ]
+    },
+    {
+      "id": "jaisalmer",
+      "name": "Jaisalmer",
+      "state": "Rajasthan",
+      "distance_km": 800,
+      "description": "The Golden City rises from the Thar Desert like a mirage – an ancient fort city, camel dunes, and desert camps.",
+      "best_for": ["couple", "friends", "family"],
+      "tags": ["desert", "history", "adventure", "offbeat", "scenic", "romantic"],
+      "ideal_days": 3,
+      "avg_daily_cost_per_person": 1600,
+      "avg_meal_cost_per_person": 180,
+      "avg_temp_c": 32,
+      "image_hint": "jaisalmer golden fort desert dunes",
+      "food_tip": "Dal baati churma at any rooftop restaurant in the Fort area",
+      "dinner_tip": "Rooftop cafes inside Jaisalmer Fort have the best ambiance",
+      "origin_hint": "Delhi",
+      "local_tips": [
+        "Stay inside the living Fort for an authentic experience",
+        "Negotiate camel safari prices – ₹400-600 per hour is fair",
+        "Desert camp overnight is worth every rupee"
+      ],
+      "activities": [
+        {"name": "Sam Sand Dunes camel safari", "category": "adventure", "cost_approx": 700, "best_time": ["evening"], "tip": "Sunset on the dunes is unmissable – arrive by 5:30 PM"},
+        {"name": "Jaisalmer Fort (Sonar Qila) walk", "category": "history", "cost_approx": 100, "best_time": ["morning"], "tip": "Living fort with 4,000 residents – get lost in the lanes"},
+        {"name": "Patwon Ki Haveli", "category": "history", "cost_approx": 100, "best_time": ["morning"], "tip": "5 interconnected havelis with intricate carvings"},
+        {"name": "Desert camp with cultural night", "category": "romantic", "cost_approx": 2000, "best_time": ["evening"], "tip": "Includes dinner, folk music, and stargazing"},
+        {"name": "Gadsisar Lake sunrise", "category": "sightseeing", "cost_approx": 50, "best_time": ["morning"], "tip": "Migratory birds in winter; boat ride available"},
+        {"name": "Kuldhara ghost village", "category": "offbeat", "cost_approx": 50, "best_time": ["afternoon"], "tip": "Abandoned in 1825; eerie and fascinating"},
+        {"name": "Desert National Park jeep safari", "category": "wildlife", "cost_approx": 1500, "best_time": ["morning"], "tip": "Great Indian Bustard sightings; book in advance"}
+      ]
+    },
+    {
+      "id": "rishikesh",
+      "name": "Rishikesh",
+      "state": "Uttarakhand",
+      "distance_km": 250,
+      "description": "The adventure capital of India meets the yoga capital of the world, where the Ganga roars through the Himalayan foothills.",
+      "best_for": ["friends", "couple", "family"],
+      "tags": ["adventure", "spiritual", "trekking", "rafting", "yoga", "hills"],
+      "ideal_days": 3,
+      "avg_daily_cost_per_person": 1200,
+      "avg_meal_cost_per_person": 180,
+      "avg_temp_c": 22,
+      "has_hills": true,
+      "image_hint": "rishikesh ganga river rafting bridge",
+      "food_tip": "Chotiwala restaurant – try the thali near Laxman Jhula",
+      "dinner_tip": "Little Buddha Cafe has great Ganga views and Mediterranean food",
+      "origin_hint": "Delhi",
+      "local_tips": [
+        "No meat or alcohol sold in Rishikesh – stock up in Haridwar if needed",
+        "Ganga Aarti at Triveni Ghat at 6 PM is a must-attend",
+        "Book rafting directly with Shivpuri operators to avoid middlemen"
+      ],
+      "activities": [
+        {"name": "White water rafting Shivpuri to Rishikesh", "category": "adventure", "cost_approx": 800, "best_time": ["morning"], "tip": "16 km stretch with grade 3-4 rapids; best Sep-Nov and Mar-May"},
+        {"name": "Bungee jumping at Jumpin Heights", "category": "adventure", "cost_approx": 3550, "best_time": ["morning"], "tip": "India's highest fixed platform bungee; book online 2 days prior"},
+        {"name": "Laxman Jhula & Ram Jhula walk", "category": "sightseeing", "cost_approx": 0, "best_time": ["morning"], "tip": "Cross both suspension bridges; great views at sunrise"},
+        {"name": "Yoga & meditation class", "category": "relaxation", "cost_approx": 500, "best_time": ["morning"], "tip": "Parmarth Niketan offers free evening yoga"},
+        {"name": "Neer Garh Waterfall trek", "category": "adventure", "cost_approx": 100, "best_time": ["morning"], "tip": "45-min easy trek; great for a swim"},
+        {"name": "Camping at Shivpuri", "category": "adventure", "cost_approx": 1500, "best_time": ["evening"], "tip": "Bonfire + Ganga side camp is worth the cost"},
+        {"name": "Ganga Aarti at Triveni Ghat", "category": "spiritual", "cost_approx": 0, "best_time": ["evening"], "tip": "Arrive by 5:30 PM for a front row spot"}
+      ]
+    },
+    {
+      "id": "ooty",
+      "name": "Ooty (Udhagamandalam)",
+      "state": "Tamil Nadu",
+      "distance_km": 320,
+      "description": "The Queen of Hill Stations – British-era charm, tea gardens, and toy train rides through misty Nilgiri forests.",
+      "best_for": ["family", "couple"],
+      "tags": ["hills", "scenic", "tea", "kids_friendly", "romantic", "nature"],
+      "ideal_days": 3,
+      "avg_daily_cost_per_person": 1400,
+      "avg_meal_cost_per_person": 200,
+      "avg_temp_c": 16,
+      "has_hills": true,
+      "image_hint": "ooty tea garden hills nilgiri",
+      "food_tip": "Ooty homemade chocolates and varkey biscuits are famous – buy at Charing Cross",
+      "dinner_tip": "Willy's Coffee Pub has good South Indian + Continental fusion",
+      "origin_hint": "Bangalore",
+      "local_tips": [
+        "Nilgiri Mountain Railway toy train from Mettupalayam is a UNESCO experience",
+        "Botanical Gardens are best in May during annual flower show",
+        "Doddabetta Peak can be foggy – go in the morning for clear views"
+      ],
+      "activities": [
+        {"name": "Nilgiri Mountain Railway toy train ride", "category": "kids_friendly", "cost_approx": 250, "best_time": ["morning"], "tip": "Book tickets at least a week ahead; window seats on the right side"},
+        {"name": "Botanical Gardens", "category": "sightseeing", "cost_approx": 50, "best_time": ["morning"], "tip": "55-acre garden with a 20-million-year-old fossil tree"},
+        {"name": "Doddabetta Peak", "category": "sightseeing", "cost_approx": 30, "best_time": ["morning"], "tip": "Highest point in Nilgiris at 2637m; clear views before 10 AM"},
+        {"name": "Tea factory tour – Nilgiri tea", "category": "offbeat", "cost_approx": 150, "best_time": ["afternoon"], "tip": "Folkington's or Korakundah estates offer guided tours"},
+        {"name": "Pykara Lake & Falls", "category": "scenic", "cost_approx": 200, "best_time": ["afternoon"], "tip": "Boat ride on Pykara Lake with pine forest backdrop"},
+        {"name": "Ooty Lake boating", "category": "kids_friendly", "cost_approx": 160, "best_time": ["afternoon"], "tip": "Paddle boats and motor boats available; lovely in the mist"},
+        {"name": "Mukurthi National Park trek", "category": "wildlife", "cost_approx": 400, "best_time": ["morning"], "tip": "Nilgiri Tahr and deer sightings common; permit needed"}
+      ]
+    }
+  ]
