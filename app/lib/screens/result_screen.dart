@@ -268,4 +268,4 @@ class ResultScreen extends StatelessWidget {
       ),
     );
   }
-}2
+}
