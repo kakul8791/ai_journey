@@ -79,7 +79,9 @@ class NLPParser:
             "extracted": {...},   # fields extracted so far
             "trip_params": {...}  # only when type == "ready"
           }
+
         """
+        
         # Rebuild state from history
         state = self._rebuild_state(history)
 
