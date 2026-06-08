@@ -484,11 +484,14 @@ class _PlanTripScreenState extends State<PlanTripScreen>
       setState(() => _isFocused = _focusNode.hasFocus);
     });
 
-    Future.delayed(const Duration(milliseconds: 400), () {
-      _addBotMessage(
-        "Namaste! 🙏 I'm your AI Journey Planner.\n\nTell me about your dream trip!\n\n\"Planning a couple trip from Delhi, 4 days, budget ₹20,000, within 400 km\" 🗺️",
-      );
-    });
+     Future.delayed(const Duration(milliseconds: 400), () {
+    //   _addBotMessage(
+    //     "Namaste! 🙏 I'm your AI Journey Planner.\n\nTell me about your dream trip!\n\n\"Planning a couple trip from Delhi, 4 days, budget ₹20,000, within 400 km\" 🗺️",
+    //   );
+    // });
+    _addBotMessage(
+  "Welcome to AI Journey Planner ✨\n\nShare your destination, budget, duration, and travel preferences, and I'll create personalized recommendations for your next adventure.\n\nExample: Couple trip from Delhi • 4 days • Budget ₹20,000 • Within 400 km",
+);
   }
 
   @override
