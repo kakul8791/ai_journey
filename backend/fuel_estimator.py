@@ -34,7 +34,7 @@ VEHICLE_PROFILES = {
         "efficiency_kmpl": 15,
         "a": 0.18,
         "b": 0.00004,
-        "tank_litres": 45,
+        "tank_litres": 50,
         "fuel_price_inr": 103,
         "fuel_type": "Petrol",
         "seats": 5,
