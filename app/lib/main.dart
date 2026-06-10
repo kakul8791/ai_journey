@@ -1,36 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'screens/home_screen.dart';
+import 'screens/chat_screen.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setSystemUIOverlayStyle(
-    const SystemUiOverlayStyle(
-      statusBarColor: Colors.transparent,
-      statusBarIconBrightness: Brightness.light,
-    ),
-  );
-  runApp(const AiJourneyApp());
+  runApp(const JourneyPlannerApp());
 }
 
-class AiJourneyApp extends StatelessWidget {
-  const AiJourneyApp({super.key});
+class JourneyPlannerApp extends StatelessWidget {
+  const JourneyPlannerApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'AI Journey Planner',
+      title: 'Journey Planner AI',
       debugShowCheckedModeBanner: false,
+
       theme: ThemeData(
-        fontFamily: 'Nunito',
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF1A6B4A),
-          brightness: Brightness.dark,
-        ),
-        scaffoldBackgroundColor: const Color(0xFF0D1F17),
         useMaterial3: true,
+        colorSchemeSeed: Colors.blue,
       ),
-      home: const HomeScreen(),
+
+      home: const ChatScreen(),
     );
   }
 }

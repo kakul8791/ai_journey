@@ -1,82 +1,202 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-//const String BASE_URL = 'http://10.0.2.2:8000';
- // Android emulator → localhost
-const String BASE_URL = 'http://localhost:8000';
-
 class ApiService {
-  static final ApiService _instance = ApiService._internal();
-  factory ApiService() => _instance;
-  ApiService._internal();
 
-  final _client = http.Client();
+  // Emulator ke liye:
+  // Android Emulator => 10.0.2.2
+  // Real Device => Laptop IP (e.g. 192.168.1.5)
 
-  // ── Chat / NLP ──────────────────────────────────────────────────────────
+  static const String baseUrl =
+      "http://10.0.2.2:8000";
+
+  Future<Map<String, dynamic>> postRequest(
+    String endpoint,
+    Map<String, dynamic> body,
+  ) async {
+
+    try {
+
+      final response = await http.post(
+        Uri.parse("$baseUrl$endpoint"),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: jsonEncode(body),
+      );
+
+      if (response.statusCode >= 200 &&
+          response.statusCode < 300) {
+
+        return jsonDecode(response.body);
+      }
+
+      throw Exception(
+        "Server Error: ${response.statusCode}",
+      );
+
+    } catch (e) {
+      throw Exception(e.toString());
+    }
+  }
+
+  Future<Map<String, dynamic>> getRequest(
+    String endpoint,
+  ) async {
+
+    try {
+
+      final response = await http.get(
+        Uri.parse("$baseUrl$endpoint"),
+      );
+
+      if (response.statusCode >= 200 &&
+          response.statusCode < 300) {
+
+        return jsonDecode(response.body);
+      }
+
+      throw Exception(
+        "Server Error: ${response.statusCode}",
+      );
+
+    } catch (e) {
+      throw Exception(e.toString());
+    }
+  }
+
+  // ---------------------------
+  // CHAT API
+  // ---------------------------
 
   Future<Map<String, dynamic>> chat({
     required String message,
-    required List<Map<String, dynamic>> history,
-    String sessionId = 'default',
+    List<Map<String, dynamic>> history =
+        const [],
   }) async {
-    final res = await _client.post(
-      Uri.parse('$BASE_URL/chat'),
-      headers: {'Content-Type': 'application/json'},
-      body: jsonEncode({
-        'message': message,
-        'session_id': sessionId,
-        'history': history,
-      }),
+
+    return await postRequest(
+      "/chat",
+      {
+        "message": message,
+        "session_id": "flutter_app",
+        "history": history,
+      },
     );
-    if (res.statusCode == 200) return jsonDecode(res.body);
-    throw Exception('Chat API error: ${res.statusCode}');
   }
 
-  // ── Recommend ──────────────────────────────────────────────────────────
+  // ---------------------------
+  // RECOMMENDATION API
+  // ---------------------------
 
-  Future<List<dynamic>> recommend(Map<String, dynamic> tripParams) async {
-    final res = await _client.post(
-      Uri.parse('$BASE_URL/recommend'),
-      headers: {'Content-Type': 'application/json'},
-      body: jsonEncode(tripParams),
+  Future<Map<String, dynamic>> recommend({
+    required String groupType,
+    required double budget,
+    required int days,
+    required String origin,
+    required double maxDistanceKm,
+    required int numPeople,
+    required List<String> preferences,
+  }) async {
+
+    return await postRequest(
+      "/recommend",
+      {
+        "group_type": groupType,
+        "budget": budget,
+        "days": days,
+        "origin": origin,
+        "max_distance_km": maxDistanceKm,
+        "num_people": numPeople,
+        "preferences": preferences,
+      },
     );
-    if (res.statusCode == 200) {
-      return jsonDecode(res.body)['recommendations'];
-    }
-    throw Exception('Recommend API error: ${res.statusCode}');
   }
 
-  // ── Fuel ──────────────────────────────────────────────────────────────
+  // ---------------------------
+  // FUEL API
+  // ---------------------------
 
-  Future<Map<String, dynamic>> fuelEstimate(Map<String, dynamic> params) async {
-    final res = await _client.post(
-      Uri.parse('$BASE_URL/fuel'),
-      headers: {'Content-Type': 'application/json'},
-      body: jsonEncode(params),
+  Future<Map<String, dynamic>> fuelEstimate({
+    required String placeId,
+    required String origin,
+    required String transport,
+    required int numPeople,
+    required double budget,
+    required int days,
+    required String groupType,
+  }) async {
+
+    return await postRequest(
+      "/fuel",
+      {
+        "place_id": placeId,
+        "origin": origin,
+        "transport": transport,
+        "num_people": numPeople,
+        "budget": budget,
+        "days": days,
+        "group_type": groupType,
+      },
     );
-    if (res.statusCode == 200) return jsonDecode(res.body);
-    throw Exception('Fuel API error: ${res.statusCode}');
   }
 
-  // ── Itinerary ──────────────────────────────────────────────────────────
+  // ---------------------------
+  // ITINERARY API
+  // ---------------------------
 
-  Future<Map<String, dynamic>> buildItinerary(Map<String, dynamic> params) async {
-    final res = await _client.post(
-      Uri.parse('$BASE_URL/itinerary'),
-      headers: {'Content-Type': 'application/json'},
-      body: jsonEncode(params),
+  Future<Map<String, dynamic>> itinerary({
+    required String placeId,
+    required String origin,
+    required String transport,
+    required int numPeople,
+    required double budget,
+    required int days,
+    required String groupType,
+  }) async {
+
+    return await postRequest(
+      "/itinerary",
+      {
+        "place_id": placeId,
+        "origin": origin,
+        "transport": transport,
+        "num_people": numPeople,
+        "budget": budget,
+        "days": days,
+        "group_type": groupType,
+      },
     );
-    if (res.statusCode == 200) return jsonDecode(res.body);
-    throw Exception('Itinerary API error: ${res.statusCode}');
   }
 
-  // ── Feedback ──────────────────────────────────────────────────────────
+  // ---------------------------
+  // FEEDBACK API
+  // ---------------------------
 
-  Future<void> sendFeedback(Map<String, dynamic> params) async {
-    await _client.post(
-      Uri.parse('$BASE_URL/feedback'),
-      headers: {'Content-Type': 'application/json'},
-      body: jsonEncode(params),
+  Future<Map<String, dynamic>> submitFeedback({
+    required String placeId,
+    required int rating,
+    required String groupType,
+    required String budgetRange,
+  }) async {
+
+    return await postRequest(
+      "/feedback",
+      {
+        "place_id": placeId,
+        "rating": rating,
+        "group_type": groupType,
+        "budget_range": budgetRange,
+      },
     );
+  }
+
+  // ---------------------------
+  // HEALTH API
+  // ---------------------------
+
+  Future<Map<String, dynamic>> healthCheck()
+  async {
+    return await getRequest("/health");
   }
 }
