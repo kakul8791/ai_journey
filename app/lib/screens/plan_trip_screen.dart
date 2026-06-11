@@ -65,7 +65,7 @@
 //           curve: Curves.easeOut,
 //         );
 //       }
-//     });
+//     
 //   }
 
 //   Future<void> _sendMessage(String text) async {
