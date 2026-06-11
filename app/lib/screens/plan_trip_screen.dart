@@ -650,7 +650,7 @@ class _PlanTripScreenState extends State<PlanTripScreen>
             scale: _pulseAnimation,
             child: Container(
               width: 40,
-              height: 40,
+              height: 44,
               decoration: BoxDecoration(
                 gradient: const LinearGradient(
                   colors: [Color(0xFF004D2C), Color(0xFF00C853)],
