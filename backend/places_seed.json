@@ -56,7 +56,7 @@
         "Avoid weekends if visiting water sports zones – massively crowded"
       ],
       "activities": [
-        {"name": "Baga Beach water sports", "category": "adventure", "cost_approx": 1200, "best_time": ["morning"], "tip": "Parasailing + jet ski combo is worth it"},
+        {"name": "Baga Beach water sports", "category": "adventure", "cost_approx": 5000, "best_time": ["morning"], "tip": "Parasailing + jet ski combo is worth it"},
         {"name": "Dudhsagar Waterfall day trip", "category": "adventure", "cost_approx": 800, "best_time": ["morning"], "tip": "Book jeep safari from Collem village"},
         {"name": "Fort Aguada sunset", "category": "sightseeing", "cost_approx": 50, "best_time": ["evening"], "tip": "Arrive 30 mins before sunset for the golden light"},
         {"name": "Anjuna Flea Market", "category": "shopping", "cost_approx": 500, "best_time": ["afternoon"], "tip": "Every Wednesday; bargain hard"},
