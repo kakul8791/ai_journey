@@ -80,7 +80,7 @@ class ItineraryPlanner:
         return {
             "place_name": place["name"],
             "place_state": place.get("state", ""),
-            "days": days,
+            "day": days,
             "num_people": num_people,
             "transport": transport,
             "group_type": group_type,
