@@ -26,8 +26,8 @@ def _load_places():
 
 # Budget allocation ratios
 BUDGET_SPLIT = {
-    "accommodation": 0.35,
-    "food": 0.30,
+    "accommodation": 0.25,
+    "food": 0.40,
     "activities": 0.25,
     "shopping_misc": 0.10,
 }
