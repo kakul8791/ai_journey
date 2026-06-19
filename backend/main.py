@@ -86,7 +86,7 @@ async def recommend(req: TripRequest):
 
 @app.post("/fuel")
 async def fuel_estimate(req: PlaceSelected):
-    """ fuel estimate, speed schedule, and cost breakdown."""
+    """ fuel estimate, speed schedules, and cost."""
     try:
         result = fuel_estimator.estimate(
             origin=req.origin,
