@@ -133,7 +133,7 @@ class RecommendationEngine:
     def _build_basket_scores(self):
         """
         Market Basket: find (group_type, budget_range) → most frequently
-        co-visited / co-rated places and boost those places' scores.
+        / co-rated places and boost those places' scores.
 
         We treat each unique (group_type, budget_range) pair as a 'transaction'
         and count which place_ids appear most often with high ratings (≥4).
