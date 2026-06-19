@@ -42,7 +42,7 @@ GROUP_ACTIVITY_WEIGHTS = {
 MEAL_TIMES = ["Breakfast", "Lunch", "Dinner"]
 
 TRANSPORT_DEPART_TIPS = {
-    "car":    "Start by 6:00 AM to avoid city traffic",
+    "car":    "Start by 5:00 AM to avoid city traffic",
     "bike":   "Start by 6:30 AM – cooler temps and less traffic",
     "bus":    "Reach the bus stand 30 mins before departure",
     "train":  "Reach station 45 mins early; confirm PNR status",
