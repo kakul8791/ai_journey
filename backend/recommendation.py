@@ -136,7 +136,7 @@ class RecommendationEngine:
         / co-rated places and boost those places' scores.
 
         We treat each unique (group_type, budget_range) pair as a 'transaction'
-        and count which place_ids appear most often with high ratings (≥4).
+        and count which places appear most often with high ratings (≥4).
         """
         basket: dict = defaultdict(lambda: defaultdict(int))
         for fb in self.feedback_log:
