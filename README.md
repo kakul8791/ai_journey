@@ -1,0 +1,1 @@
+The app we are creating will be able to recommend users to choose the best spot for their trip and will make their journey bit more special and easier no problems no last moment problems no budget overflow only ease
