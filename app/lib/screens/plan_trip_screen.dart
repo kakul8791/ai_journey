@@ -490,7 +490,7 @@ class _PlanTripScreenState extends State<PlanTripScreen>
     //   );
     // });
     _addBotMessage(
-  "Welcome to AI Journey Planner ✨\n\nShare your destination, budget, duration, and travel preferences, and I'll create personalized recommendations for your's next adventure.\n\nExample: Couple trip from Delhi • 3 days • Budget ₹10,000 • Within 250 km",
+  "Welcome to AI Journey Planner ✨\n\nShare your destination, budget, duration, and travel preferences, and I'll create personalized recommendations for your's next adventure.\n\nExample: Couple trip from Delhi • 4 days • Budget ₹10,000 • Within 250 km",
 );
   }
 
